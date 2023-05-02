@@ -5,9 +5,13 @@ Hint: Bot Framework
 Objective: Create a chat bot to help users learn the basics of Git and GitHub using Git SCM, GitHub Docs and Stackoverflow archives as data sources.
 
 The code should create a simple Flask app that implements a chatbot using Azure Cognitive Services Language Understanding (LUIS) API. 
+
 #Set up the FLASK app and configure it = sets up the app, specifies the name and oncfigures it using the 'form_object' method
+
 #Set up LUIS client and credentials = environment variables are used to store the LUIS app ID and subscription key and use these to initialize the LUISRuntimeClient object
+
 #Define the webhook URL = the URL that the chatbot will use to receive messages from users (Question here - what URL do I actually add here? Do I need to create a interface, publish it, generate a URL for accessing it and then add it here?)
+
 #Define the main route for the chatbot = I use the '/' ropute. The chatbot should parse the message and use LUIS to detect the itnent and entities in the message, then handle the message based on the detected intent
 - (Question here - this sample code only handles a single prompt, in this case ' create repository' but obviously I need the chatbot to handle alot more prompts than just 1. How do I create a chatbot that takes user's inputs and analzes the data sources against those prompts? Or, how do I train a AI model to scrape the data sources to define possible topics/prompts and integrates it into this code? 
 
